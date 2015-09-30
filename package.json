@@ -1,0 +1,49 @@
+{
+  "name": "lsty",
+  "version": "0.0.0",
+  "description": "List extraction from json or csv input",
+  "homepage": "https://github.com/flarebyte/lsty",
+  "author": {
+    "name": "Olivier Huin",
+    "email": "npm.olivier.huin@flarebyte.com"
+  },
+  "repository": "flarebyte/lsty",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "lsty",
+    "list",
+    "json",
+    "csv"
+  ],
+  "dependencies": {
+    "joi": "^6.7.1",
+    "lodash": "^3.10.1",
+    "meow": "^2.1.0",
+    "string": "^3.3.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "chai": "^3.3.0",
+    "fs-extra": "^0.24.0",
+    "grunt-bump": "^0.6.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt",
+    "browser": "browserify index.js > browser.js"
+  },
+  "bin": {
+    "lsty": "cli.js"
+  }
+}
